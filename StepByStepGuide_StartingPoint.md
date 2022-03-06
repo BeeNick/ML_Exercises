@@ -21,11 +21,13 @@ To dowload the repository you can open a terminal and use:
 > git clone git@github.com:BeeNick/ML_Exercises.git
 
 
+
 ### Programming lenguages
 
 #### Python - (python3)
 
 Most Linux distributions came with python preinstalled, here the official page: [https://www.python.org/](https://www.python.org/)
+
 
 
 ### Set up a virtual envirorment
@@ -35,16 +37,21 @@ The exercises will be mainly in python, could be usefull set up an isolated envi
 
 To do so with python we can use virtualenv, to install virtualenv for your user you can type in the terminal:
 > python3 -m pip install --user -U virtualenv
+
 And create an isolated python envirorment with:
 > python3 -m virtualenv mle_env
+
 (where *mle_env* is the name of the new envirorment so choose wath you want)
 
 Use:
 > source mle_env/bin/activate
+
 to activate the envirorment.
+
 While the envirorment is active any pachkage you install with *pip* will be installed in this isolated envriromrent.
 Use:
 > deactivate
+
 to deactivate the envirorment.
 
 Here the offical page: [https://pypi.org/project/virtualenv/](https://pypi.org/project/virtualenv/)
@@ -57,6 +64,7 @@ Here the offical page: [https://pypi.org/project/virtualenv/](https://pypi.org/p
 To avoid tracing of virtual envirorment files you can create a *.gitignore* file and write in it the name of your virtual enviorment (that coincides with the related folder). 
 
 
+
 ### Jupiter notebook / IPython notebook
 
 
@@ -67,14 +75,27 @@ Here the official page: [https://jupyter.org/](https://jupyter.org/)
 
 To install jupiter notebook use:
 > python3 -m pip install -U notebook
+
+To set up an apposite kernel for the notebook in the virtualenv:
+> python3 -m ipykernel instal --user --name=mle_p3
+
 To run the notebook use:
 > jupyter notebook
 
 
+Then you should set *gitignore* to ignore hidden directories:
+>.*
+
+>!/.gitignore
+
+
+
 I suggest to install also *jupyterthemes* to change the defautl theme with the one wich you are more comfortable with.
 > python3 -m pip install -U jupyterthemes
+
 Show the available themes:
 > jt -l
+
 Set a theme:
 > jt -t *themename*
 

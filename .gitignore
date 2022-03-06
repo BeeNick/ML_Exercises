@@ -1,2 +1,4 @@
 mle_env
+.*
+!/.gitignore
 

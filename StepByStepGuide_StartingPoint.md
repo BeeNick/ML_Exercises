@@ -101,7 +101,7 @@ Set a theme:
 
 
 
-
+Another advice is to install *autopep8* extension to reformat the code according to [PEP 8](https://www.python.org/dev/peps/pep-0008/)
 
 
 

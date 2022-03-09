@@ -77,7 +77,7 @@ To install jupiter notebook use:
 > python3 -m pip install -U notebook
 
 To set up an apposite kernel for the notebook in the virtualenv:
-> python3 -m ipykernel instal --user --name=mle_p3
+> python3 -m ipykernel install --user --name=mle_p3
 
 To run the notebook use:
 > jupyter notebook
@@ -102,6 +102,9 @@ Set a theme:
 
 
 Another advice is to install *autopep8* extension to reformat the code according to [PEP 8](https://www.python.org/dev/peps/pep-0008/)
+Use:
+> python3 -m pip install autopep8
+
 
 
 
